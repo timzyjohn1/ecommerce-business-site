@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NovaNook is a modern e-commerce storefront for everyday essentials, curated lifestyle products, and premium home finds."
+    />
+    <title>NovaNook | Modern Essentials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand-wrap">
+          <div class="brand-mark">N</div>
+          <span>NovaNook</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#shop">Shop</a>
+          <a href="#collections">Collections</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="nav-icon" aria-label="Search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.94 12.56l4.56 4.56 1.41-1.41-4.56-4.56A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg>
+          </button>
+          <button class="nav-icon cart-button" aria-label="Open cart">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a2 2 0 100 4 2 2 0 000-4zm10 0a2 2 0 100 4 2 2 0 000-4zM6.2 6h14.25l-1.54 7.12a2 2 0 01-1.98 1.63H9.02a2 2 0 01-1.97-1.61L5.3 3H3V1h3.15l.4 2H20v2H6.53l.67 3.3H18v2H7.7L6.2 6z"/></svg>
+            <span class="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Fresh arrivals for everyday living</span>
+            <h1>Upgrade your space with purposeful essentials.</h1>
+            <p>
+              Discover elevated home, wellness, and tech pieces chosen for modern routines,
+              beautiful rooms, and smarter living.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#shop">Shop now</a>
+              <a class="btn btn-secondary" href="#collections">Explore collections</a>
+            </div>
+            <ul class="hero-metrics" aria-label="Store achievements">
+              <li><strong>18k+</strong><span>Happy customers</span></li>
+              <li><strong>4.9/5</strong><span>Average rating</span></li>
+              <li><strong>48h</strong><span>Fast shipping</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured product showcase">
+            <div class="product-showcase">
+              <div class="showcase-badge">Best seller</div>
+              <img
+                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80"
+                alt="Minimalist home decor setup"
+              />
+              <div class="showcase-info">
+                <div>
+                  <p>Cloud Lounge Chair</p>
+                  <span>Curved comfort</span>
+                </div>
+                <strong>$229</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-bar">
+        <div class="container trust-bar-inner">
+          <span>Free shipping over $75</span>
+          <span>Easy 30-day returns</span>
+          <span>Secure checkout</span>
+          <span>Premium quality</span>
+        </div>
+      </section>
+
+      <section class="categories" id="collections">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Shop by category</span>
+            <h2>Curated for how you live.</h2>
+          </div>
+
+          <div class="category-grid">
+            <article class="category-card card-one">
+              <div>
+                <span>Home</span>
+                <h3>Comfort in every corner.</h3>
+              </div>
+              <a href="#shop">Browse</a>
+            </article>
+            <article class="category-card card-two">
+              <div>
+                <span>Wellness</span>
+                <h3>Mindful routines</h3>
+              </div>
+              <a href="#shop">Browse</a>
+            </article>
+            <article class="category-card card-three">
+              <div>
+                <span>Tech</span>
+                <h3>Smart upgrades</h3>
+              </div>
+              <a href="#shop">Browse</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog" id="shop">
+        <div class="container">
+          <div class="section-heading split">
+            <div>
+              <span class="eyebrow">Trending now</span>
+              <h2>Best sellers you’ll love.</h2>
+            </div>
+            <div class="filter-row" aria-label="Product filters">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="home">Home</button>
+              <button class="filter-btn" data-filter="wellness">Wellness</button>
+              <button class="filter-btn" data-filter="tech">Tech</button>
+              <button class="filter-btn" data-filter="accessories">Accessories</button>
+            </div>
+          </div>
+
+          <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="feature-band">
+        <div class="container feature-grid">
+          <article>
+            <div class="feature-icon">⚡</div>
+            <h3>Fast delivery</h3>
+            <p>Next-day dispatch on select items to keep your routine moving.</p>
+          </article>
+          <article>
+            <div class="feature-icon">🛡️</div>
+            <h3>Premium quality</h3>
+            <p>Thoughtfully selected products made to last beautifully.</p>
+          </article>
+          <article>
+            <div class="feature-icon">💬</div>
+            <h3>Expert support</h3>
+            <p>Real humans help you find what fits your life and budget.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <div class="section-heading center">
+            <span class="eyebrow">Customer love</span>
+            <h2>What shoppers are saying.</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <div class="stars" aria-label="5 star review">★★★★★</div>
+              <p>
+                “The quality exceeded my expectations. My house feels more polished and calm
+                after just one order.”
+              </p>
+              <div class="person">
+                <strong>Amelia J.</strong>
+                <span>Verified buyer</span>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <div class="stars" aria-label="5 star review">★★★★★</div>
+              <p>
+                “Everything arrived quickly, beautifully packaged, and the support team was so
+                helpful with recommendations.”
+              </p>
+              <div class="person">
+                <strong>Marcus T.</strong>
+                <span>Verified buyer</span>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <div class="stars" aria-label="5 star review">★★★★★</div>
+              <p>
+                “I ordered a desk lamp and journal set—both look premium and have become daily
+                staples.”
+              </p>
+              <div class="person">
+                <strong>Priya S.</strong>
+                <span>Verified buyer</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter" id="contact">
+        <div class="container newsletter-box">
+          <div>
+            <span class="eyebrow">Let’s stay connected</span>
+            <h2>Get product drops and exclusive offers.</h2>
+          </div>
+          <form class="newsletter-form">
+            <label class="sr-only" for="email">Email address</label>
+            <input id="email" type="email" placeholder="Your email address" />
+            <button type="submit" class="btn btn-primary">Join now</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" aria-label="Shopping cart">
+      <div class="cart-header">
+        <h3>Your cart</h3>
+        <button class="close-cart" aria-label="Close cart">×</button>
+      </div>
+      <div class="cart-items" id="cart-items">
+        <p class="empty-cart">Your cart is empty.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong id="subtotal">$0.00</strong>
+        </div>
+        <button class="btn btn-primary checkout-btn">Checkout</button>
+      </div>
+    </aside>
+
+    <div class="cart-overlay" aria-hidden="true"></div>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand-wrap footer-brand">
+            <div class="brand-mark">N</div>
+            <span>NovaNook</span>
+          </div>
+          <p>Thoughtful design for a more comfortable everyday life.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#shop">New arrivals</a></li>
+            <li><a href="#shop">Best sellers</a></li>
+            <li><a href="#collections">Collections</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#home">Shipping</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> NovaNook</span>
+        <span>Privacy • Terms • Accessibility</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
